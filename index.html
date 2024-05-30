@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+<body>
+    <form action="manju.html" method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="first_name">Firstname:</label>
+            <input id="first_name" type="text" name="first_name" required >
+            <br>
+            <br>
+
+            <label for="middle_name">Middlename:</label>
+            <input type="text" id="middle_name" name="middle_name" required>
+            <br>
+            <br>
+
+            <label for="last_name">Lastname:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br>
+            <br>
+            
+            <label for="course">Course:</label>
+            <select name="course" id="course">
+                <option value="course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Gender:</label>
+            <br>
+
+            <input type="radio" id="gender_male" name="gender" value="male">
+            <label for="gender_male">Male</label>
+            <br>
+
+            <input type="radio" name="gender" id="gender_female" value="female">
+            <label for="gender_female">Female</label>
+            <br>
+
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+            <br>
+            <br>
+
+            <label for="date_of_birth">DOB</label>
+            <input type="datetime-local" id="date_of_birth" name="date_of_birth" >
+            <br>
+
+            <label for="phone_no">Phone:</label>
+            <input type="text"  value="+91" disabled size="1">
+            <input type="number" id="phone_no" name="phone_no">
+            <br>
+            <br>
+            
+            <label for="address">Address</label>
+            <br>
+            <textarea name="address" id="address" rows="5" cols="50"></textarea>
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password">
+            <br>
+            <br>
+
+            <label for="re-password">Re-type password:</label>
+            <input type="text" id="re-password" name="re-password">
+            <br>
+            <br>
+
+            <input type="checkbox" name="tnc" value="Agreed" id="tnc">
+            <label for="tnc">Agree to terms and conditions</label>
+            <br>
+            <br>
+
+            <label for="file_upload">Choose File</label>
+            <input type="file" name="file_upload" id="file_upload">
+            <br>
+            <br>
+
+            <label for="color">Choose Color</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+            
+        </fieldset>
+    </form>
+</body>
+</html>
